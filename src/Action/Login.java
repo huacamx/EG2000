@@ -1,5 +1,6 @@
 package Action;
 import Service.LoginService;
+import Service.UeasService;
 import Ex.User;
 public class Login  {
 	private User user;
@@ -16,7 +17,11 @@ public class Login  {
 
 	public String execute(){
 		LoginService login = new LoginService();
+		
+		
 		if(login.validate(user)){
+			UeasService listaUea = new UeasService();
+			user.setListaUea(listaUea.setUpListaUeas());
 		return "success";	
 		}
 	return "LOGIN";		

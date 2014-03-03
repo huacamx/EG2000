@@ -1,16 +1,19 @@
 package Ex;
 import java.util.ArrayList;
-public class Uea {
+public class Uea extends Print{
 	private String NombreUEA;
 	private String ClaceUEA;
 	private int CreditosUEA;
 	private ArrayList <Unidad> ListaUnidades;
 	
-	Uea(String NombreUEA, String ClaceUEA, int CreditosUEA){
+	public Uea(String NombreUEA, String ClaceUEA, int CreditosUEA){
 		this.NombreUEA = NombreUEA;
 		this.ClaceUEA = ClaceUEA;
 		this.CreditosUEA = CreditosUEA;
 		ListaUnidades = new ArrayList <Unidad>();
+		print(this.NombreUEA);
+		print(this.ClaceUEA);
+		print(this.CreditosUEA);
 		
 	}
 	

@@ -10,11 +10,16 @@
 
     <package name="login" namespace="/" extends="struts-default">
 		<action name="login" class="Action.Login">
-			<result name="success">/success.jsp</result>
+			<result name="success">/Ueas.jsp</result>
 			<result name="failure">/index.jsp</result>	
 		</action>
 	</package>
-    
+        <package name="ueas" namespace="/" extends="struts-default">
+		<action name="listaUnidades" class="Action.Unidades">
+			<result name="success">/Unidades.jsp</result>
+			<result name="failure">/Ueas.jsp</result>	
+		</action>
+	</package>
     
    
 
