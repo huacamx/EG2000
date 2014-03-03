@@ -61,6 +61,8 @@ public class Uea {
 	return;		
 	}
 	
-	public void agregarPregunta(){}
+	public void agregarPregunta(){
+		
+	}
 }
 

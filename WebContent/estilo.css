@@ -1,0 +1,21 @@
+body,
+html {
+  margin: 0;
+}
+h1 {
+  color: #de0f2b;
+  font-size: 3em;
+}
+p {
+  font-size: 1.5em;
+}
+#header {
+  margin: auto;
+  width: 60%;
+}
+#form {
+  text-align: center;
+  padding: 0.5em;
+  margin: auto;
+  width: 50%;
+}
